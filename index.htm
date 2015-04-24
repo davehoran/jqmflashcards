@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="home">
+	<div data-role="header">
+		<h1>Flash Card Decks</h1>
+		<!--a href="#home" data-icon="back">Home</a>-->
+	</div>
+
+	<div data-role="main" class="ui-content">
+	<div>Select a flashcard deck</div>
+	<ul data-role="listview" data-filter="true" data-inset="true">
+		
+		<li>
+		<a href="#deck123">
+		<h3>Deck one</h3>
+		<p>This is a deck description</p>
+		<span class="ui-li-count">15</span>
+		</a>
+		</li>
+
+		<li><a href="#deck123">
+		<h3>Deck two</h3>
+		<p>This is a description</p>
+		<span class="ui-li-count">10</span></a>
+		</li>
+		
+		<li><a href="#deck123">
+		<h3>Deck three</h3>
+		<p>This is deck three</p>
+		<span class="ui-li-count">23</span></a>
+		</li>
+		
+		<li>
+		<a href="#deck123">
+		<h3>Deck four</h3>
+		<p>this is another card deck</p>
+		<span class="ui-li-count">17</span></a></li>
+	</ul>
+
+	</div>
+	
+	<div data-role="footer">
+	<h3>&copy 2014 Dave Horan</h3>
+	</div>
+</div>
+<div data-role="page" id="deck123">
+	<div data-role="header">
+	<h1>Flash Cards Deck</h1>
+	<a href="#home" data-icon="back">Home</a>
+	</div>
+	<p> This is the topic</p>
+	<ul data-role="listview" data-filter="true">
+		<li><a href="#cardQ1">Question 1</a></li>
+		<li><a href="#cardQ2">Question 2</a></li>
+		<li><a href="#cardQ3">Question 3</a></li>
+		<li><a href="#cardQ4">Question 4</a></li>
+		<li><a href="#cardQ1">Question 5</a></li>
+		<li><a href="#cardQ2">Question 6</a></li>
+		<li><a href="#cardQ3">Question 7</a></li>
+	</ul>
+	
+	<div data-role="footer">
+	<h3>&copy 2014 Dave Horan</h3>
+	</div>
+</div>
+
+<div data-role="page" id="cardQ1">
+	<div data-role="header">
+		<a href="#deck123" data-icon="back">Deck</a>
+		<h1>Flash Cards: Card 1</h1>
+		<a href="#cardQ2" data-icon="forward">Next</a>
+	</div>
+	<p>Topic: subtopic A</p>
+	<div data-role="main" class="ui-content">
+	QUESTION
+	<p><a href="#cardA1" data-role="button" data-transition="flip">View Answer</a></p>
+	</div>
+	
+	<div data-role="footer">
+	<h3>&copy 2015 Dave Horan</h3>
+	</div>
+</div>
+
+<div data-role="page" id="cardA1">
+	<div data-role="header">
+		<a href="#deck123" data-icon="back">Deck</a>
+		<h1>Flash Cards: Card 1</h1>
+		<a href="#cardQ2" data-icon="forward">Next</a>
+	</div>
+	<p>Topic: subtopic A</p>
+	<div data-role="main" class="ui-content">
+	ANSWER
+	<p><a href="#cardQ1" data-role="button" data-transition="flip">View Question</a></p>
+	</div>
+	
+	<div data-role="footer">
+	<h3>&copy 2015 Dave Horan</h3>
+	</div>
+</div>
+
+<div data-role="page" id="cardQ2">
+	<div data-role="header">
+	<a href="#deck123" data-icon="back">Deck</a>
+	<h1>Flash Cards: Card 2</h1>
+	<a href="#deck123" data-icon="forward">Next</a>
+	</div>
+	<p>Topic: subtopic A</p>
+	<div data-role="main" class="ui-content">
+	QUESTION
+	<p><a href="#cardA2" data-role="button" data-transition="flip">View Answer</a></p>
+	</div>
+	
+	<div data-role="footer">
+	<h3>&copy 2015 Dave Horan</h3>
+	</div>
+</div>
+
+<div data-role="page" id="cardA2">
+	<div data-role="header">
+	<a href="#deck123" data-icon="back">Deck</a>
+	<h1>Flash Cards: Card 2</h1>
+	<a href="#deck123" data-icon="forward">Next</a>
+	</div>
+	<p>Topic: subtopic A</p>
+	<div data-role="main" class="ui-content">
+	ANSWER
+	<p><a href="#cardQ2" data-role="button" data-transition="flip">View Question</a></p>
+	</div>
+	
+	<div data-role="footer">
+	<h3>&copy 2015 Dave Horan</h3>
+	</div>
+</div>
+
+</body>
+</html>
